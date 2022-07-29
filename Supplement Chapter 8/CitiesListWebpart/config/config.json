@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "file-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/CitiesList/CitiesListWebPart.js",
+          "manifest": "./src/webparts/CitiesList/CitiesListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CitiesListWebPartStrings": "lib/webparts/CitiesList/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

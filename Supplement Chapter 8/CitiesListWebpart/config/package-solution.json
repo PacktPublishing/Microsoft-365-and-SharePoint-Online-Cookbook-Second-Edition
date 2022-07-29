@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "file-viewer-client-side-solution",
+    "id": "206f30f4-9ffb-4952-af66-fde189e8d479",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "CitiesList description"
+      },
+      "longDescription": {
+        "default": "CitiesList description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "CitiesList Feature",
+        "description": "The feature that activates elements of the file-viewer solution.",
+        "id": "72b743e8-d599-4dbf-aa3d-13548eb85b77",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cities-list.sppkg"
+  }
+}

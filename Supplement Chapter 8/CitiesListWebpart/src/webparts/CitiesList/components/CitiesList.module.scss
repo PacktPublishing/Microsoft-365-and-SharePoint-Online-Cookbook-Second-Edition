@@ -1,0 +1,52 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.CitiesList {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+h5 {
+  padding-left: 10px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.Navigation {
+  height: max-content;
+  width: 30%;
+  float: left;
+  border: 1px solid grey;
+  background-color: #F2F1F0;
+  padding: 15px;
+}
+
+.FileLoadViewer {
+  width: 66%;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
