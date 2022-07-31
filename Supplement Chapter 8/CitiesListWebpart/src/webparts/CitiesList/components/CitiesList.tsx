@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './CitiesList.module.scss';
 import { ICitiesListState } from './ICitiesListState';
 import { ICitiesListProps } from './ICitiesListProps';
-import { IListItems } from './IListems';
+import { IListItems } from './IListItems';
 import "@pnp/sp/webs";
 import "@pnp/sp/lists";
 import "@pnp/sp/items";
@@ -25,22 +25,13 @@ export default class CitiesList extends React.Component<ICitiesListProps, ICitie
 
   private async GetItems() {
     try {
-
       const spCache = spfi(this._sp);
       const response: IListItems[] = await spCache.web.lists
         .getByTitle("Cities")
         .items
         .select("Title", "Country")();
-
       console.log(response);
-
-
-
-
-
       this.setState({ ListItems: response });
-
-
 
     } catch (error) {
       console.log("Error in GetItem : " + error);

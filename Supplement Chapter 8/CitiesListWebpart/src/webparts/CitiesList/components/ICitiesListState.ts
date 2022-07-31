@@ -1,7 +1,7 @@
-import { IListItems } from "./IListems";
+import { IListItems } from "./IListItems";
 
 
 export interface ICitiesListState {
- ListItems:IListItems[];
- 
+    ListItems: IListItems[];
+
 }
