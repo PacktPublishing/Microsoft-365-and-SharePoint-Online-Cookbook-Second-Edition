@@ -25,6 +25,7 @@ export default class CitiesList extends React.Component<ICitiesListProps, ICitie
 
   private async GetItems() {
     try {
+      debugger;
       const spCache = spfi(this._sp);
       const response: IListItems[] = await spCache.web.lists
         .getByTitle("Cities")
@@ -61,6 +62,7 @@ export default class CitiesList extends React.Component<ICitiesListProps, ICitie
 
         <div >
           <h1>List of Cities</h1>
+          <h2>List Name: {this.props.ListTitle}</h2>
           <ListView
             items={this.state.ListItems}
             viewFields={[{ name: "Title", maxWidth: 100 }, { name: "Country" }]}
